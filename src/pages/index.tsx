@@ -264,13 +264,13 @@ export const query = graphql`
     me: circleCiMe {
       num_projects_followed
     }
-    circleci: allCircleCiProjects {
-      edges {
-        node {
-          vcs_url
-        }
-      }
-    }
+    # circleci: allCircleCiProjects {
+    #   edges {
+    #     node {
+    #       vcs_url
+    #     }
+    #   }
+    # }
     sites: allNetlifySites(
       filter: { build_settings: { public_repo: { eq: true } } }
       sort: { fields: [name], order: ASC }

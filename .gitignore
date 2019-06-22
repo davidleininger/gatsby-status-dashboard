@@ -55,6 +55,9 @@ typings/
 .env
 .env.*
 
+# netlify files
+.netlify
+
 # gatsby files
 .cache/
 public
